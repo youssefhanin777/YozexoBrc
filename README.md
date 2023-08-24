@@ -1,7 +1,7 @@
 # AstroMusic: Distube Bot
 Listening to High-Quality Music from Various Singers
 
-![AstroMusic Logo]([url_to_logo_image](https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409)) 
+![AstroMusic Logo](https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409)
 
 **Supports Slash Commands & Prefix**
 

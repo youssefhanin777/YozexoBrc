@@ -3,7 +3,9 @@ Listening to High-Quality Music from Various Singers
 
 <img style="width: 5%;" src="https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409" alt="AstroMusic Illustration">
 
+
 ## Supports Slash Commands & Prefix
+
 
 - SoundCloud
 - YouTube
@@ -48,7 +50,7 @@ To add AstroMusic to your Discord server and start enjoying your favorite tunes,
 
 Here's an image that provides an illustration of AstroMusic in action:
 
-![AstroMusic Illustration]([url_to_illustration_image](https://cdn.discordapp.com/attachments/1113676076732911761/1144333970432086026/Screen_Shot_2023-08-23_at_1.png)) 
+<img style="width: 20%;" src="https://media.discordapp.net/attachments/1113676076732911761/1144333970432086026/Screen_Shot_2023-08-23_at_1.png?width=416&height=292" alt="AstroMusic Illustration">
 
 ## Conclusion
 

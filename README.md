@@ -1,7 +1,8 @@
 # AstroMusic : Distube Bot
 Listening to High-Quality Music from Various Singers
 
-Created by developer tools
+## Created by developer tools
+
 <img style="width: 5%;" src="https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409" alt="AstroMusic Illustration"> 
 
 

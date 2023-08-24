@@ -2,8 +2,8 @@
 Listening to High-Quality Music from Various Singers
 
 ## Created by developer tools
-<img style="width: 5%;float: right; margin-left: 10px;" src="https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409" alt="AstroMusic Illustration"> 
-style=""
+<img style="width: 5%; float: right; margin-left: 10px;" src="https://media.discordapp.net/attachments/965806495109369926/1109147334199214171/png_2dev_copy.png?width=409&height=409" alt="AstroMusic Illustration"> 
+
 
 ## Supports Slash Commands & Prefix
 

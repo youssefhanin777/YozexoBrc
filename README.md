@@ -50,7 +50,7 @@ To add AstroMusic to your Discord server and start enjoying your favorite tunes,
 
 Here's an image that provides an illustration of AstroMusic in action:
 
-<img style="width: 20%;" src="https://media.discordapp.net/attachments/1113676076732911761/1144333970432086026/Screen_Shot_2023-08-23_at_1.png?width=416&height=292" alt="AstroMusic Illustration">
+<img style="width: 50%;" src="https://media.discordapp.net/attachments/1113676076732911761/1144333970432086026/Screen_Shot_2023-08-23_at_1.png?width=416&height=292" alt="AstroMusic Illustration">
 
 ## Conclusion
 

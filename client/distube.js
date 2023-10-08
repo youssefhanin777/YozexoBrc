@@ -604,24 +604,24 @@ function receiveQueueData(newQueue, newTrack) {
 		let pause = new ButtonBuilder()
 			.setStyle("Secondary")
 			.setCustomId("3")
-			.setEmoji("1056363551889051691");
+			.setEmoji("1031533069238292520");
 
 		let forward = new ButtonBuilder()
 			.setStyle("Secondary")
 			.setCustomId("8")
-			.setEmoji("1056363558864166973"); //.setLabel(`+10 Sec`)
+			.setEmoji("1024997006382473288"); //.setLabel(`+10 Sec`)
 		let rewind = new ButtonBuilder()
 			.setStyle("Secondary")
 			.setCustomId("9")
-			.setEmoji("1056363558100795463"); //.setLabel(`-10 Sec`)
+			.setEmoji("1024997936196751430"); //.setLabel(`-10 Sec`)
 		let volumeup = new ButtonBuilder()
 			.setStyle("Secondary")
 			.setCustomId("11")
-			.setEmoji("1056363554980249621");
+			.setEmoji("1024998653640851537");
 		let volumedown = new ButtonBuilder()
 			.setStyle("Secondary")
 			.setCustomId("12")
-			.setEmoji("1056363559795302461");
+			.setEmoji("1024999026069872640");
 
 		const row = new ActionRowBuilder().addComponents([
 			volumedown,

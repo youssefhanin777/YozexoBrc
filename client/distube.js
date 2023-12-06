@@ -421,107 +421,92 @@ distube.on("noRelated", (queue) => {
 		console.log(err);
 	}
 });
-
 distube.on("error", (message, textChannel, e) => {
-	try {
-		var embed = new EmbedBuilder()
-			.setAuthor({ name: `Error` })
-			.setColor("#470000")
-			.setDescription(e);
-		message.reply({ embeds: [embed] })
-	} catch (err) {
-		console.log(e);
-	}
+  try {
+    var embed = new EmbedBuilder()
+      .setAuthor({ name: `Error` })
+      .setColor("#470000")
+      .setDescription(e);
+    message.reply({ embeds: [embed] })
+  } catch (err) {
+    console.log(e);
+  }
 });
 
 distube.on(`deleteQueue`, (queue) => {
-	try {
+  try {
 
-		var embed = new EmbedBuilder()
-			.setAuthor({ name: `Finish Queue` })
-			.setDescription(`There are no more songs to play.\nYou can activate \`/autoplay\` so that the queue never ends`)
-		queue.textChannel.messages
-			.fetch(PlayerMap.get(`currentmsg`))
-			.then((currentSongPlayMsg) => {
-				setTimeout(() => {
-					if (queue.songs.length == 0) {
-						currentSongPlayMsg.edit({ embeds: [embed], components: [] })
-					}
-				}, 1000)
-			}).catch((e) => { }),
-			console.log(`finish queue`);
-	} catch (err) {
-		console.log(err);
-	}
+    var embed = new EmbedBuilder()
+      .setAuthor({ name: `Finish Queue` })
+      .setDescription(`There are no more songs to play.\nYou can activate \`/autoplay\` so that the queue never ends`)
+    queue.textChannel.messages
+      .fetch(PlayerMap.get(`currentmsg`))
+      .then((currentSongPlayMsg) => {
+        setTimeout(() => {
+          if (queue.songs.length == 0) {
+            currentSongPlayMsg.edit({ embeds: [embed], components: [] })
+          }
+        }, 1000)
+      }).catch((e) => { }),
+      console.log(`finish queue`);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 distube.on("finish", (queue) => {
-	try {
-		queue.textChannel.messages
-			.fetch(PlayerMap.get(`currentmsg`))
-			.then((currentSongPlayMsg) => {
-				setTimeout(() => {
-					currentSongPlayMsg.edit({ components: [] })
-				}, 1000)
-			}).catch((e) => { }),
-			console.log(`finish`);
-	} catch (err) {
-		console.log(err);
-	}
+  try {
+    queue.textChannel.messages
+      .fetch(PlayerMap.get(`currentmsg`))
+      .then((currentSongPlayMsg) => {
+        setTimeout(() => {
+          currentSongPlayMsg.edit({ components: [] })
+        }, 1000)
+      }).catch((e) => { }),
+      console.log(`finish`);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 distube.on(`finishSong`, (queue, song) => {
-	try {
-		var embed = new EmbedBuilder()
-			.setAuthor({ name: `Finish Song` })
-			.setThumbnail(`https://img.youtube.com/vi/${song.id}/mqdefault.jpg`)
-			.setDescription(`**[${song.name}](${song.url})**\n`)
-			.setFooter({
-				text: `Added by ${song.user.username}  |  Duration: [${song.formattedDuration}]`,
-				iconURL: song.user.avatarURL(),
-			});
-		queue.textChannel.messages
-			.fetch(PlayerMap.get(`currentmsg`))
-			.then((currentSongPlayMsg) => {
-				setTimeout(() => {
-					currentSongPlayMsg.edit({ embeds: [embed], components: [] })
-				}, 1000)
-			}).catch((e) => { }),
+  try {
+    var embed = new EmbedBuilder()
+      .setAuthor({ name: `Finish Song` })
+      .setThumbnail(`https://img.youtube.com/vi/${song.id}/mqdefault.jpg`)
+      .setDescription(`**[${song.name}](${song.url})**\n`)
+      .setFooter({
+        text: `Added by ${song.user.username}  |  Duration: [${song.formattedDuration}]`,
+        iconURL: song.user.avatarURL(),
+      });
+    queue.textChannel.messages
+      .fetch(PlayerMap.get(`currentmsg`))
+      .then((currentSongPlayMsg) => {
+        setTimeout(() => {
+          currentSongPlayMsg.edit({ embeds: [embed], components: [] })
+        }, 1000)
+      }).catch((e) => { }),
 
-			console.log(`finishSong ${song.name}`);
-	} catch (err) {
-		console.log(err);
-	}
+      console.log(`finishSong ${song.name}`);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 distube.on("disconnect", (queue) => {
-	try {
-		queue.textChannel.messages
-			.fetch(PlayerMap.get(`currentmsg`))
-			.then((currentSongPlayMsg) => {
-				setTimeout(() => {
-					currentSongPlayMsg.edit({ components: [] })
-				}, 1000)
-			}).catch((e) => { }),
-			console.log(`The voice channel is Disconnected! Leaving the voice channel!`);
-	} catch (err) {
-		console.log(err);
-	}
+  try {
+      console.log(`The voice channel is Disconnected! Leaving the voice channel!`);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 distube.on("empty", (queue) => {
-	try {
-		queue.textChannel.messages
-			.fetch(PlayerMap.get(`currentmsg`))
-			.then((currentSongPlayMsg) => {
-				setTimeout(() => {
-					currentSongPlayMsg.edit({ components: [] })
-				}, 1000)
-			}).catch((e) => { }),
-			console.log(`The voice channel is empty! Leaving the voice channel!`);
-	} catch (err) {
-		console.log(err);
-	}
+  try {
+      console.log(`The voice channel is empty! Leaving the voice channel!`);
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 // DisTubeOptions.searchSongs > 1

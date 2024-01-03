@@ -79,7 +79,6 @@ distube.on("initQueue", (queue) => {
 
 
 let songEditInterval;
-
 distube.on(`playSong`, async (queue, track) => {
 	try {
 		var newQueue = distube.getQueue(queue.id);

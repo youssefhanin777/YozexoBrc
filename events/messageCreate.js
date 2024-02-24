@@ -10,9 +10,7 @@ const utilites = new Utils();
 
 module.exports = {
   name: 'messageCreate',
-  async execute(client, message) {
-    try {
-      //console.log(client)
+  async execute(client, message) 
       if (!message.content.startsWith(prefix) || message.author.bot) return;
 
       const args = message.content.slice(prefix.length).trim().split(/ +/);
